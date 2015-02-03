@@ -82,29 +82,33 @@ header #block-views-exp-display-products-page{
 }
 
 /*** MENÚ PRINCIPAL ***/
-nav.navigation{
-	display:none !important;
-}
+
 #zone-menu-wrapper{
-	/*border-top: 1px solid #6E6F71;
-	border-bottom: 1px solid #6E6F71;
-	background-color: #FFFFFF;*/
 	background-image: url('../images/bg_menu.jpg');
 	background-repeat:repeat-x;
 	background-position: top;
 	padding-top: 1px;
 	height: 53px;
-
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
+}
+.mopen #zone-menu-wrapper{
+	height: 106px;
 }
 #zone-menu-wrapper #block-system-main-menu{
 	padding: 0px;
 }
-#zone-menu-wrapper #block-system-main-menu ul.menu>li{
+#zone-menu-wrapper #block-system-main-menu ul.menu li{
 	margin: 0px; padding: 0px;
 	display:inline-block;
+	
 }
 #zone-menu-wrapper #block-system-main-menu ul.menu li a{
 	display:block;
+	height: 52px;
   /*margin-left: 10px;*/
   padding: 0px 20px 0px 25px;
   background-image: url('../images/flecha_menu.png');
@@ -115,31 +119,26 @@ nav.navigation{
   font-family: Proximanova, sans-serif;
   color: #414042;
   font-size: 13px;
-  line-height: 52px;
+  line-height: 53px;
   font-weight: 300;
   text-transform: uppercase;
   border: none;
 }
 #zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu{
-	/*display:none;*/
-	width: 100%;
+	display: none;
 	position:absolute; 
-	z-index: 3;
-	margin-top: 1px;
-	background-color: #e35755;
+	z-index: 1;
+	height: 52px;
 }
-#zone-menu-wrapper #block-system-main-menu ul.menu li:hover .menu {
-    display:block; 
+#zone-menu-wrapper #block-system-main-menu ul.menu li:hover a{
+    color: #76c9b7;
 }
-/*padding-bottom: 55px;*/
-#zone-menu-wrapper #block-system-main-menu ul.menu li a:hover {
-  color: #76c9b7;
-}
+
 #zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu li{
+	margin: 0px; padding: 0px;
 }
 #zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu li a{
-  height: 54px;
-  background-color: #e35755;  	
+  display:block;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   font-family: Proximanova, sans-serif;
@@ -147,7 +146,7 @@ nav.navigation{
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
-  background-image:none;
+  background:none !important;
 }
 #zone-menu-wrapper #block-system-main-menu ul.menu>li ul.menu li a:hover{
 	color: #772725;
