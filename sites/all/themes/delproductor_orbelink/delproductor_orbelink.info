@@ -60,6 +60,10 @@ stylesheets[all][] = css/delproductor_orbelink_normal.css
 stylesheets[all][] = css/delproductor_orbelink_wide.css
 
 
+; Scripts
+scripts[] = js/delproductor_global.js
+
+
 ; OPTIONAL STYLESHEETS
 
 css[commerce_kickstart_style.css][name] = Commerce Kickstart theme global style.
