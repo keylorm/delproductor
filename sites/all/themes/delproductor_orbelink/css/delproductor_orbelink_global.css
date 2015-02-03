@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Pacifico|Proximanova:300,400,500,600,700);
+
+body{
+	background: none !important;
+}
 
 /*** MENÚ TOP Y BUSCADOR ***/
 
@@ -72,21 +76,39 @@ header #block-views-exp-display-products-page{
 #block-views-exp-display-products-page .views-submit-button{
 	display: none;
 }
-
+/*** BRANDING ***/
+#zone-branding-wrapper{
+	/*background-color: #FFF;*/
+}
 
 /*** MENÚ PRINCIPAL ***/
 
 #zone-menu-wrapper{
-	border-top: 1px solid #6E6F71;
-	background-color: #FFFFFF;
-
+	background-image: url('../images/bg_menu.jpg');
+	background-repeat:repeat-x;
+	background-position: top;
+	padding-top: 1px;
+	height: 53px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;	
 }
-#zone-menu-wrapper .navigation .primary-menu ul li{
+.mopen #zone-menu-wrapper{
+	height: 106px;
+}
+#zone-menu-wrapper #block-system-main-menu{
+	padding: 0px;
+}
+#zone-menu-wrapper #block-system-main-menu ul.menu li{
 	margin: 0px; padding: 0px;
 	display:inline-block;
+	
 }
-#zone-menu-wrapper .navigation .primary-menu ul li a{
+#zone-menu-wrapper #block-system-main-menu ul.menu li a{
 	display:block;
+	height: 52px;
   /*margin-left: 10px;*/
   padding: 0px 20px 0px 25px;
   background-image: url('../images/flecha_menu.png');
@@ -97,11 +119,35 @@ header #block-views-exp-display-products-page{
   font-family: Proximanova, sans-serif;
   color: #414042;
   font-size: 13px;
-  line-height: 52px;
+  line-height: 53px;
   font-weight: 300;
   text-transform: uppercase;
   border: none;
 }
-#zone-menu-wrapper .navigation .primary-menu ul li a:hover {
-  color: #76c9b7;
+#zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu{
+	display: none;
+	position:absolute; 
+	z-index: 1;
+	height: 52px;
+}
+#zone-menu-wrapper #block-system-main-menu ul.menu li:hover a{
+    color: #76c9b7;
+}
+
+#zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu li{
+	margin: 0px; padding: 0px;
+}
+#zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu li a{
+  display:block;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: Proximanova, sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background:none !important;
+}
+#zone-menu-wrapper #block-system-main-menu ul.menu>li ul.menu li a:hover{
+	color: #772725;
 }
