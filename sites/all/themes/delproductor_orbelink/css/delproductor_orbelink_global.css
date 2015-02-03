@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Pacifico);
+
+header #zone-user-wrapper{
+	height: 40px;
+	background-color: #76C9B7;
+}
+header #zone-user-wrapper .container-24 .grid-16{
+	width: 700px;
+}
+header #zone-user-wrapper .container-24 .grid-8{
+	width: 240px;
+}
+header #zone-user-wrapper .menu{
+}
+header #zone-user-wrapper .menu li{
+  list-style-image:none;
+  list-style-type:none;
+  display:inline-block;
+  margin: 0px; padding: 0px;	
+}
+header #zone-user-wrapper .menu li a{
+	display:block;
+  height: 40px;
+  border-left: 1px solid #faf4e8;
+  -webkit-transition: all 550ms ease;
+  transition: all 550ms ease;
+  font-family: Proximanova, sans-serif;
+  color: white;
+  font-size: 13px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 0px 10px 0px 10px;
+}
+header #zone-user-wrapper .menu li a:hover {
+  color: #268c79;
+}
+
+#block-views-exp-display-products-page .form-text#edit-search-api-views-fulltext{
+  padding-left: 55px;
+  border-width: 0px;
+  border-color: black;
+  border: none;
+  background-color: #addfd4;
+  background-image: url('../images/lupa.png');
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 230px;
+  height: 40px;
+  margin: 0px;
+  float:right;
+  
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;  	
+}
+header #block-views-exp-display-products-page{
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+#block-views-exp-display-products-page .form-text#edit-search-api-views-fulltext::-webkit-input-placeholder { color:#FFF; }
+#block-views-exp-display-products-page .form-text#edit-search-api-views-fulltext::-moz-placeholder { color:#FFF; } /* firefox 19+ */
+#block-views-exp-display-products-page .form-text#edit-search-api-views-fulltext:-ms-input-placeholder { color:#FFF; } /* ie */
+#block-views-exp-display-products-page .form-text#edit-search-api-views-fulltext:-moz-placeholder { color:#FFF; }
+
+#block-views-exp-display-products-page .views-submit-button{
+	display: none;
+}
