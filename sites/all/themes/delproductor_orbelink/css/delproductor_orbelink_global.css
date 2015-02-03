@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Pacifico);
 
+/*** MENÚ TOP Y BUSCADOR ***/
+
 header #zone-user-wrapper{
 	height: 40px;
 	background-color: #76C9B7;
@@ -9,8 +11,6 @@ header #zone-user-wrapper .container-24 .grid-16{
 }
 header #zone-user-wrapper .container-24 .grid-8{
 	width: 240px;
-}
-header #zone-user-wrapper .menu{
 }
 header #zone-user-wrapper .menu li{
   list-style-image:none;
@@ -71,4 +71,37 @@ header #block-views-exp-display-products-page{
 
 #block-views-exp-display-products-page .views-submit-button{
 	display: none;
+}
+
+
+/*** MENÚ PRINCIPAL ***/
+
+#zone-menu-wrapper{
+	border-top: 1px solid #6E6F71;
+	background-color: #FFFFFF;
+
+}
+#zone-menu-wrapper .navigation .primary-menu ul li{
+	margin: 0px; padding: 0px;
+	display:inline-block;
+}
+#zone-menu-wrapper .navigation .primary-menu ul li a{
+	display:block;
+  /*margin-left: 10px;*/
+  padding: 0px 20px 0px 25px;
+  background-image: url('../images/flecha_menu.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: Proximanova, sans-serif;
+  color: #414042;
+  font-size: 13px;
+  line-height: 52px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+}
+#zone-menu-wrapper .navigation .primary-menu ul li a:hover {
+  color: #76c9b7;
 }
