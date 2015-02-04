@@ -85,6 +85,7 @@ header #block-views-exp-display-products-page{
 
 #zone-menu-wrapper{
 	background-image: url('../images/bg_menu.jpg');
+	background-color: #E35855;
 	background-repeat:repeat-x;
 	background-position: top;
 	padding-top: 1px;
@@ -97,6 +98,9 @@ header #block-views-exp-display-products-page{
 }
 .mopen #zone-menu-wrapper{
 	height: 106px;
+}
+.mopen.mopen2 #zone-menu-wrapper{
+	height: 160px;
 }
 #zone-menu-wrapper #block-system-main-menu{
 	padding: 0px;
@@ -124,12 +128,19 @@ header #block-views-exp-display-products-page{
   text-transform: uppercase;
   border: none;
 }
+
+#zone-menu-wrapper #block-system-main-menu .content{
+	position:relative;
+}
+
 #zone-menu-wrapper #block-system-main-menu ul.menu li ul.menu{
 	display: none;
 	position:absolute; 
 	z-index: 1;
 	height: 52px;
+	left: 0;
 }
+
 #zone-menu-wrapper #block-system-main-menu ul.menu li:hover a{
     color: #76c9b7;
 }

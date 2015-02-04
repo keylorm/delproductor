@@ -5,6 +5,9 @@ jQuery(document).ready(function(){
          function () {
 		 	var subm = jQuery(this).find(".menu");
 			if(subm[0] != undefined){
+				if(jQuery(this).hasClass('menu-expandido-doble')){
+					jQuery('body').addClass('mopen2');
+				}				
 				jQuery('body').addClass('mopen');
 				subm.show('slow');
 			}
@@ -14,6 +17,7 @@ jQuery(document).ready(function(){
 		 	var subm = jQuery(this).find(".menu");
 			if(subm[0] != undefined){
 				jQuery('body').removeClass('mopen');
+				jQuery('body').removeClass('mopen2');
 				subm.hide('slow');
 			}			
 			//console.log(subm[0]);
